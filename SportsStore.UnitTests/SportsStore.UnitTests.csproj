@@ -39,7 +39,7 @@
       <HintPath>..\packages\Moq.4.1.1311.0615\lib\net40\Moq.dll</HintPath>
     </Reference>
     <Reference Include="Ninject">
-      <HintPath>C:\Users\yeye\Desktop\Ninject-3.0.0.15-release-net-4.5\Ninject.dll</HintPath>
+      <HintPath>C:\Users\puling\desktop\Ninject-3.0.0.15-release-net-4.5\Ninject.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
