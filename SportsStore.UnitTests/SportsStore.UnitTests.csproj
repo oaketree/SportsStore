@@ -43,6 +43,7 @@
       <HintPath>..\SportsStore.WebUI\bin\Ninject.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -58,9 +59,20 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTest1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SportsStore.Domain\SportsStore.Domain.csproj">
+      <Project>{56536066-7d0c-4d1f-8fb1-cc99d6e3320b}</Project>
+      <Name>SportsStore.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SportsStore.WebUI\SportsStore.WebUI.csproj">
+      <Project>{ec2a5287-9ce3-464a-93c7-844a06a46418}</Project>
+      <Name>SportsStore.WebUI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
